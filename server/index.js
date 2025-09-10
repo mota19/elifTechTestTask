@@ -1,9 +1,15 @@
 import express from "express";
 
 import pool from "./db.js";
+import cors from "cors";
 
 const app = express();
 app.use(express.json());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 const port = process.env.PORT || 3000;
 

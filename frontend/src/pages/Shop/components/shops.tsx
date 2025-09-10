@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 const Shops: FC = () => {
   useEffect(() => {
-    fetch("http://localhost:3000/shops")
+    fetch("https://eliftechtesttask-production.up.railway.app/shops")
       .then((res) => res.json())
       .then((data) => console.log(data));
   }, []);
